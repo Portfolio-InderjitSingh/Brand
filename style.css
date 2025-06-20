@@ -214,6 +214,7 @@ footer { padding: 4rem 5% 2rem; border-top: 1px solid var(--border-color); }
 }
 
 @media (max-width: 768px) {
+    .hero { padding: 2.4rem 5%; }
     .hero-content h1 { font-size: 3rem; }
     .headline-suffix { display: none; } /* Hides part of the headline on smaller screens */
     .hero-content p { font-size: 1rem; }
