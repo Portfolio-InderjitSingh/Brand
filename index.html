@@ -7,67 +7,82 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="promo-banner">
+    <!-- <div class="promo-banner">
         <p>Limited Time: 30% Off All Web Design Projects!</p>
-    </div>
+    </div> -->
     <header>
         <nav>
-            <div class="logo animate-on-load"><span style='font-size:30px;'>&#9673;</span></div>
-            <div class="nav-controls">
-                <ul class="desktop-nav">
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <div class="theme-switcher">
-                    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
-                    <label for="theme-toggle" class="theme-toggle-label"></label>
-                </div>
+            <!-- Desktop: Logo with Image and Name -->
+            <div class="logo-container animate-on-load">
+                <img src="https://assets-global.website-files.com/657989b143224a48c5991b22/657989b143224a48c5991b58_icon-512w.webp" alt="Lucas Bennet Logo">
+                <span class="logo-name">Inderjit Singh</span>
+            </div>
+
+            <!-- Mobile: Theme Switcher Icon -->
+            <div class="logo-mobile" title="Toggle Theme">
+                <span style='font-size:30px;'>◉</span>
+            </div>
+
+            <ul class="desktop-nav animate-on-load">
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <!-- Desktop: Action Buttons -->
+            <div class="nav-actions animate-on-load">
+                <a href="#" class="cta-button primary nav-cta">Start Your Project</a>
+                <button id="theme-switcher-btn" class="theme-switcher-btn" title="Toggle Theme">◉</button>
+            </div>
+
+            <!-- Mobile: Menu Toggle Button -->
+            <div class="nav-controls-mobile">
                 <button class="menu-open-btn" aria-label="Open navigation menu" aria-expanded="false">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <line class="line1" x1="12" y1="4" x2="12" y2="20"></line>
+                        <line class="line2" x1="4" y1="12" x2="20" y2="12"></line>
+                    </svg>
                 </button>
             </div>
         </nav>
-    </header>
-
-    <!-- Mobile Navigation Panel -->
-    <div class="mobile-nav" role="dialog" aria-modal="true">
-        <div class="mobile-nav-header">
-            <div class="mobile-nav-logo">Inderjit Singh</div>
-            <button class="menu-close-btn" aria-label="Close navigation menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-            </button>
+        <!-- Mobile Navigation Panel -->
+        <div class="mobile-nav" role="dialog" aria-modal="true">
+            <ul class="mobile-nav-links">
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
-        <ul class="mobile-nav-links">
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-
+    </header>
 
     <main>
         <section class="hero">
             <div class="hero-content">
                 <div class="tags">
-                    <span class="animate-on-load" style="--delay: 0.2s;">Web Design</span>
-                    <span class="animate-on-load" style="--delay: 0.3s;">Framer Expert</span>
-                    <span class="animate-on-load" style="--delay: 0.4s;">UI/UX</span>
-                    <span class="animate-on-load" style="--delay: 0.5s;">Brand Identity</span>
+                    <span class="animate-on-load" style="--delay: 0.2s;">Creativity</span>
+                    <span class="animate-on-load" style="--delay: 0.3s;">Innovation</span>
+                    <span class="animate-on-load" style="--delay: 0.4s;">Design</span>
+                    <span class="animate-on-load" style="--delay: 0.5s;">Culture</span>
                 </div>
-                <h1 class="animate-on-load" style="--delay: 0.6s;">Designing Brands That Capture Hearts<span class="headline-suffix"> and Drive Action.</span></h1>
-                <p class="animate-on-load" style="--delay: 0.7s;">I'm Lucas. I build beautiful, fast, and user-friendly websites with Framer that help your business stand out and grow.</p>
+                <!-- Desktop Hero Content -->
+                <h1 class="animate-on-load hero-headline-desktop" style="--delay: 0.6s;">Designing Brands That Capture Hearts<span class="headline-suffix"> and Drive Action.</span></h1>
+                <p class="animate-on-load hero-description-desktop" style="--delay: 0.7s;">I'm Lucas. I build beautiful, fast, and user-friendly websites with Framer that help your business stand out and grow.</p>
+                
+                <!-- Mobile Hero Content -->
+                <h1 class="animate-on-load hero-headline-mobile" style="--delay: 0.6s;">Websites that Wow and Convert.</h1>
+                <p class="animate-on-load hero-description-mobile" style="--delay: 0.7s;">From concept to launch, I create stunning Framer sites that are built for performance and growth.</p>
+                
                 <div class="hero-buttons">
-                    <a href="#" class="cta-button primary animate-on-load" style="--delay: 0.8s;">Let's Talk</a>
+                    <a href="#" class="cta-button primary animate-on-load" style="--delay: 0.8s;">Let's Connect</a>
                     <a href="#" class="cta-button secondary animate-on-load" style="--delay: 0.9s;">See My Work</a>
                 </div>
             </div>
         </section>
 
         <section class="work-section">
-            <h2 class="animate-on-scroll">Featured Projects</h2>
+            <h2 class="animate-on-scroll">Featured Projects:</h2>
             <div class="work-grid">
                 <div class="work-card animate-on-scroll">
                     <img class="work-card-image" src="#" alt=".">
@@ -192,19 +207,16 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
-    // --- Theme Switcher Logic ---
-    const themeToggle = document.getElementById('theme-toggle');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const currentTheme = localStorage.getItem('theme');
-
     const applyTheme = (theme) => {
         document.documentElement.setAttribute('data-theme', theme);
-        if (theme === 'dark') {
-            themeToggle.checked = true;
-        } else {
-            themeToggle.checked = false;
-        }
+        localStorage.setItem('theme', theme);
     };
+
+    // --- Theme Switcher Logic ---
+    const desktopThemeBtn = document.getElementById('theme-switcher-btn');
+    const mobileThemeBtn = document.querySelector('.logo-mobile');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const currentTheme = localStorage.getItem('theme');
 
     if (currentTheme) {
         applyTheme(currentTheme);
@@ -212,37 +224,43 @@ document.addEventListener('DOMContentLoaded', function () {
         applyTheme(systemPrefersDark.matches ? 'dark' : 'light');
     }
 
-    themeToggle.addEventListener('change', (e) => {
-        const newTheme = e.target.checked ? 'dark' : 'light';
-        localStorage.setItem('theme', newTheme);
+    const toggleTheme = () => {
+        const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
         applyTheme(newTheme);
-    });
+    };
+
+    desktopThemeBtn.addEventListener('click', toggleTheme);
+    mobileThemeBtn.addEventListener('click', toggleTheme);
 
     // --- Mobile Navigation Logic ---
-    const openNavBtn = document.querySelector('.menu-open-btn');
-    const closeNavBtn = document.querySelector('.menu-close-btn');
+    const header = document.querySelector('header');
+    const navToggleBtn = document.querySelector('.menu-open-btn');
     const mobileNav = document.querySelector('.mobile-nav');
 
-    openNavBtn.addEventListener('click', () => {
-        mobileNav.classList.add('is-open');
-        document.body.style.overflow = 'hidden';
-        openNavBtn.setAttribute('aria-expanded', 'true');
+    navToggleBtn.addEventListener('click', () => {
+        const isMenuOpen = header.classList.contains('menu-is-open');
+
+        header.classList.toggle('menu-is-open');
+        mobileNav.classList.toggle('is-open');
+
+        if (!isMenuOpen) {
+            document.body.style.overflow = 'hidden';
+            navToggleBtn.setAttribute('aria-expanded', 'true');
+            navToggleBtn.setAttribute('aria-label', 'Close navigation menu');
+        } else {
+            document.body.style.overflow = '';
+            navToggleBtn.setAttribute('aria-expanded', 'false');
+            navToggleBtn.setAttribute('aria-label', 'Open navigation menu');
+        }
     });
 
-    closeNavBtn.addEventListener('click', () => {
-        mobileNav.classList.remove('is-open');
-        document.body.style.overflow = '';
-        openNavBtn.setAttribute('aria-expanded', 'false');
-    });
-
-    // --- FAQ Logic (Accessible) ---
+    // --- FAQ Logic ---
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         question.addEventListener('click', () => {
             const isOpened = item.classList.contains('active');
             
-            // Close all other items before opening the new one
             faqItems.forEach(i => {
                 i.classList.remove('active');
                 i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
@@ -254,7 +272,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
         
-        // Allow keyboard activation (Enter and Space)
         question.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
@@ -263,12 +280,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // --- Scroll Animation Logic (Optimized) ---
+    // --- Scroll Animation Logic ---
     const scrollObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('in-view');
-                observer.unobserve(entry.target); // Stop observing after animation
+                observer.unobserve(entry.target);
             }
         });
     }, {
