@@ -6,7 +6,7 @@
 :root {
     --primary-color: #0d0d0d;      /* Black text */
     --secondary-color: #ffffff;    /* White background */
-    --accent-color: #114aff;       /* Blue accent */
+    --accent-color: #1144ff;       /* Blue accent */
     --text-color: #5c5c5c;         /* Grayish text */
     --bg-color: #f5f5f7;           /* Off-white background */
     --bg-alt-color: #ffffff;       /* White for cards */
@@ -17,7 +17,7 @@
 [data-theme='dark'] {
     --primary-color: #ffffff;      /* White text */
     --secondary-color: #000000;    /* Black background */
-    --accent-color: #114aff;       /* Blue accent */
+    --accent-color: #1144ff;       /* Blue accent */
     --text-color: #cccccc;         /* Light gray text */
     --bg-color: #0d0d0d;           /* Very dark background */
     --bg-alt-color: #1a1a1a;       /* Dark card background */
@@ -44,7 +44,7 @@ a:focus-visible, button:focus-visible {
 
 /* --- Header & Navigation --- */
 header { padding: 1rem 5%; position: relative; }
-nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+nav { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 0; }
 
 .logo-container { display: none; } /* Hidden by default, shown on desktop */
 .logo-mobile { font-size: 1.5rem; font-weight: 600; cursor: pointer; color: var(--accent-color); transition: color 0.3s ease; }
@@ -185,13 +185,14 @@ footer { padding: 4rem 5% 2rem; border-top: 1px solid var(--border-color); text-
     .logo-container { display: flex; align-items: center; gap: 1rem; }
     .logo-container img { width: 25px; height: 25px; border-radius: 50%; }
     .logo-name { font-size: 1.25rem; font-weight: 600; color: var(--primary-color); }
-    .desktop-nav { display: flex; justify-content: center; align-items: center;  list-style: none; gap: 2rem; position: absolute; left: 50%; transform: translateX(-50%);  margin-left: -9.66rem; }
+    .desktop-nav { display: flex; justify-content: center; align-items: center;  list-style: none; gap: 2rem; position: absolute; left: 40%; transform: translateY(-100%);   }
     .desktop-nav a { color: var(--text-color); text-decoration: none; font-weight: 500; transition: color 0.3s ease;  }
     .desktop-nav a:hover { color: var(--primary-color); }
     .nav-actions { display: flex; align-items: center; gap: 1rem; }
     .theme-switcher-btn { background: none; border: none; cursor: pointer; font-size: 2.2rem; color: var(--accent-color); transition: color 0.3s ease; }
     [data-theme='dark'] .theme-switcher-btn { color: var(--primary-color); }
     .nav-cta { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
+    .nav-name { padding: 0.48rem 1.8rem; font-size: 0.96rem; }
 }
 
 @media (max-width: 991px) {
@@ -211,7 +212,7 @@ footer { padding: 4rem 5% 2rem; border-top: 1px solid var(--border-color); text-
 
 @media (max-width: 480px) {
     nav { padding: 0.4rem 0; }
-    .tags { display: grid; grid-template-columns: 1fr 1fr; padding: 0 2.4rem;  margin-top: -1.7rem; }
+    .tags { display: grid; grid-template-columns: 1fr 1fr; padding: 0 2.4rem;  margin-top: -2.2rem; }
     .hero-content h1 { font-size: 2.2rem; padding: 0 1rem; line-height: 1.38; }
     .cta-content h2 { font-size: 2rem; }
     .hero-buttons { flex-direction: column; align-items: center; }
