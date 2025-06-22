@@ -211,7 +211,7 @@ footer { padding: 4rem 5% 2rem; border-top: 1px solid var(--border-color); text-
 }
 
 @media (max-width: 480px) {
-    nav { padding: 0.5rem 0; }
+    nav { padding: 0.56rem 0; }
     .tags { display: grid; grid-template-columns: 1fr 1fr; padding: 0 2.4rem;  margin-top: -2rem; }
     .hero-content h1 { font-size: 2.2rem; padding: 0 1rem; line-height: 1.38; }
     .cta-content h2 { font-size: 2rem; }
